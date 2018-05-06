@@ -1,0 +1,23 @@
+.modalDialog {
+	font-family: Georgia;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-size: 2em;
+	width: 400px;
+	height: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	border-style: dashed;
+	text-align: center;
+	text-shadow: 0px 0px 1px #ff0000;
+
+}
+input[type="button"]{
+	font-size: 1em;
+	color: red;
+	background-color: black;
+	}

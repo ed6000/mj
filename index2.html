@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cloud 9 Wellness Center - Home</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.png">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index2.html">Home</a>
+				</li>
+				<li>
+					<a href="pages/flower.html">Flower</a>
+				</li>
+				<li>
+					<a href="pages/edibles.html">Edibles</a>
+				</li>
+				<li>
+					<a href="pages/topicals.html">Topicals</a>
+				</li>
+				<li class="submenu">
+					<a href="#">Concentrates</a>
+					<div class="concentrates">
+						<a href="pages/shatter.html">Shatter</a>
+						<a href="pages/wax.html">Wax</a>
+					</div>
+				</li>
+				<li>
+					<a href="pages/drinks.html">Drinks</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<output id="countdown" class="category"></output>
+
+	<div id="homeContainer">
+		<div id="homeContent">
+			<h1 id="companyLogo">Cloud 9<br>Wellness Center</h1>
+
+
+			<h1 id="mainPage">Welcome to the premiere <abbr title="Southern California">SoCal</abbr> dispensary specializing in pain relief products</h1>
+
+
+			<h2 class="blink" id="special">Today's Special</h2>
+
+
+			<p id="pspecial">Two Kiva chocolate bars for the price of one</p>
+			<center><img src="images/edibles/KIVA_Milk_Chocolate.jpg" width="204" height="274" alt=""/></center>
+			<span id="address">Please visit our location at:<br>5531 Jackson Drive<br>La Mesa, CA 91942</span>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13417.9592656148!2d-117.0185946!3d32.7792694!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc7b0a609196be4a5!2sCloud+9+Wellness+Center!5e0!3m2!1sen!2sus!4v1511961587962" width="586" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+		<script type="text/javascript">
+function count(){
+var targetTime = new Date("Jan 1, 2018 00:00:00");
+var currentTime = new Date().getTime();
+var difference = targetTime - currentTime;
+//math help taken from https://www.htmlgoodies.com/html5/javascript/calculating-the-difference-between-two-dates-in-javascript.html
+var d = Math.floor(difference / (86400000)); //seconds in a day
+  var h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (36000000));
+  var m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  var s = Math.floor((difference % (1000 * 60)) / 1000);
+var cdown = "Proposition 64 takes effect in: "+d+" days "+h+" hours "+m+" minutes "+s+" seconds ";
+	document.getElementById("countdown").innerHTML = cdown;
+}
+setInterval(count, 1000);
+	</script>
+</body>
+</html>
